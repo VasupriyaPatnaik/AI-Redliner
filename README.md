@@ -91,4 +91,3 @@ Visit `http://localhost:3000` in your browser to view the frontend.
 Legal teams can dramatically reduce time spent on policy compliance checks by automating the comparison of internal rules with incoming documents.
 AI Redliner ensures audit-readiness, reduces errors, and enables faster decision-making with structured, AI-generated redline reports.
 
-```
