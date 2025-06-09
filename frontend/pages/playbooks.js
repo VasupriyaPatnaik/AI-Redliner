@@ -239,7 +239,7 @@ export default function PlaybooksPage() {
 
   return (
     <Layout>
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 font-['Inter']">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="bg-white rounded-xl shadow-sm p-6 mb-8">
           <div className="mb-6">
             <h1 className="text-2xl font-bold text-gray-800 mb-1">Playbook Management</h1>
@@ -362,7 +362,7 @@ export default function PlaybooksPage() {
                   placeholder="Enter playbook content"
                   value={form.content}
                   onChange={(e) => setForm({ ...form, content: e.target.value })}
-                  className="w-full border border-gray-300 rounded-md px-3 py-2 text-gray-800 focus:ring-purple-500 focus:border-purple-500 font-['Inter']"
+                  className="w-full border border-gray-300 rounded-md px-3 py-2 text-gray-800 focus:ring-purple-500 focus:border-purple-500"
                   required
                 />
               </div>
@@ -400,19 +400,19 @@ export default function PlaybooksPage() {
 
           {/* Status messages */}
           {success && (
-            <div className="mb-4 p-3 bg-green-50 text-green-800 rounded-md border border-green-200 font-['Inter']">
+            <div className="mb-4 p-3 bg-green-50 text-green-800 rounded-md border border-green-200">
               {success}
             </div>
           )}
           {error && (
-            <div className="mb-4 p-3 bg-red-50 text-red-800 rounded-md border border-red-200 font-['Inter']">
+            <div className="mb-4 p-3 bg-red-50 text-red-800 rounded-md border border-red-200">
               {error}
             </div>
           )}
         </div>
 
         {/* Playbook List Section */}
-        <div className="bg-white rounded-xl shadow-sm overflow-hidden font-['Inter']">
+        <div className="bg-white rounded-xl shadow-sm overflow-hidden">
           <div className="px-6 py-4 border-b border-gray-200 flex flex-col sm:flex-row sm:items-center sm:justify-between">
             <div className="mb-4 sm:mb-0">
               <h2 className="text-lg font-medium text-gray-800">Your Playbooks</h2>
@@ -585,7 +585,7 @@ export default function PlaybooksPage() {
         {/* View Modal */}
         {viewPlaybook && (
           <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center p-4 z-50">
-            <div className="bg-white max-w-4xl w-full rounded-lg p-6 overflow-auto max-h-[80vh] shadow-xl relative font-['Inter']">
+            <div className="bg-white max-w-4xl w-full rounded-lg p-6 overflow-auto max-h-[80vh] shadow-xl relative">
               <button
                 className="absolute top-4 right-4 text-gray-400 hover:text-gray-500 p-1"
                 onClick={() => setViewPlaybook(null)}
@@ -612,7 +612,7 @@ export default function PlaybooksPage() {
         {/* Edit Modal */}
         {editPlaybook && (
           <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center p-4 z-50">
-            <div className="bg-white max-w-4xl w-full rounded-lg p-6 overflow-auto max-h-[80vh] shadow-xl relative font-['Inter']">
+            <div className="bg-white max-w-4xl w-full rounded-lg p-6 overflow-auto max-h-[80vh] shadow-xl relative">
               <button
                 className="absolute top-4 right-4 text-gray-400 hover:text-gray-500 p-1"
                 onClick={() => setEditPlaybook(null)}
